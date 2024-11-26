@@ -1,0 +1,24 @@
+
+.grid-vontainer{
+    display: grid;
+    grid-template-areas:
+    "s1 s1 s1" 
+    "hd hd hd"
+    "s2 s2 s2"
+    "ss ss ss"
+    "s3 s3 s3"
+    "tt tt tt";
+    grid-template-columns:7.5% 85% 7.5% ;
+    grid-template-rows:2.5% 20% 2.5% 50% 2.5% 20%;
+    height:100vh;
+}
+
+.space1{
+    grid-area: s1;
+}
+.head {
+    grid-area: hd;
+    background-color: aliceblue;
+}
+
+.nav {grid-area: ss;}
