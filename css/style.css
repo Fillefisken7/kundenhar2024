@@ -1,5 +1,5 @@
 
-.grid-vontainer{
+.grid-container{
     display: grid;
     grid-template-areas:
     "s1 s1 s1" 
@@ -15,10 +15,42 @@
 
 .space1{
     grid-area: s1;
+    background-color: white;
+
 }
-.head {
+.header {
     grid-area: hd;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-start;
     background-color: aliceblue;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 24px;
+    height: 100%;
 }
 
-.nav {grid-area: ss;}
+.space2{
+    grid-area: s2;
+    background-color: white;
+}
+
+.slideshow {grid-area: ss;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.space3{
+    grid-area: s3;
+    background background-color: white;
+    
+}
+
+.text{
+    grid-area: tt;
+    background-color: aliceblue;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
