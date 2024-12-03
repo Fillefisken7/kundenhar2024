@@ -1,4 +1,6 @@
 
+body{background-color: #34495e;}
+
 .grid-container{
     display: grid;
     grid-template-areas:
@@ -15,7 +17,6 @@
 
 .space1{
     grid-area: s1;
-    background-color: white;
 
 }
 .header {
@@ -24,15 +25,40 @@
     align-items: center ;
     justify-content: flex-start;
     background-color: aliceblue;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 24px;
+    padding-left: 10px;
     height: 100%;
+    
 }
 
+.logo-and-buttens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav{
+    margin-left: auto;
+    display: flex;
+    padding-right: 10px;
+}
+
+.nav-button{
+    margin-left: 20px;
+    background-color:#f39c12 ;
+    color: white;
+    border: #34495e;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
 .space2{
-    grid-area: s2;
-    background-color: white;
+    grid-area: s;
 }
 
 .slideshow {grid-area: ss;
@@ -43,7 +69,6 @@
 
 .space3{
     grid-area: s3;
-    background background-color: white;
     
 }
 
@@ -51,6 +76,6 @@
     grid-area: tt;
     background-color: aliceblue;
     text-align: center;
-    color: white;
+    color: black;
     padding: 10px;
 }

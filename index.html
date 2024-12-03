@@ -14,12 +14,71 @@
 
     <header class = "header">
       <div class="logo-and-buttens">
-      <button></button>
-
-      </div>
+      <span class="logo">Finance Triks</span>
+    </div>
+    <nav> 
+        <button class="nav-button">Home</button>
+        <button class="nav-button">Abute</button>
+    </nav>
     </header>
 
     <section class="slideshow">slideshow</section>
+
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <div class="numbertext">1 / 3</div>
+           <img src="img/bild1.avif" style="width:100%">
+            <div class="text">skriv något här</div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">2 / 3</div>
+               <img src="img/bild2.avif" style="width:100%">
+                <div class="text">skriv något här</div>
+            </div> 
+        <div class="slideshow-container">
+            <div class="myslides fade">
+                <div class="numbertext">3 / 3</div>
+               <img src="img/bild3.avif" style="width:100%">
+                <div class="text">skriv något här</div>
+            </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+        </div>¨
+        <br>
+        <div>
+            <span class="dot" onclick="=currentSlide(1)"></span>
+            <span class="dot" onclick="=currentSlide(2)"></span>
+            <span class="dot" onclick="=currentSlide(3)"></span>
+
+        </div>
+    </div> 
+    <script>
+let slideindex = 1;
+showslide(slideindex)
+ 
+function plusSlides(n){
+    showslide(slideindex += n);
+}
+function plusSlides(n){
+    showslide(slideindex = n);
+}
+function showslide(n) { let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 
     <div class="space2"></div>
 
