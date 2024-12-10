@@ -1,5 +1,8 @@
 
-body{background-color: #34495e;}
+body{background-color: #34495e;
+font-family: Arial, sans-serif;
+
+}
 
 .grid-container{
     display: grid;
@@ -25,8 +28,8 @@ body{background-color: #34495e;}
     align-items: center ;
     justify-content: flex-start;
     background-color: aliceblue;
-    padding-left: 10px;
-    height: 100%;
+    padding-left: 10px 20px;
+    justify-content: space-between;
     
 }
 
@@ -42,7 +45,6 @@ body{background-color: #34495e;}
 }
 
 nav{
-    margin-left: auto;
     display: flex;
     padding-right: 10px;
 }
@@ -61,16 +63,22 @@ nav{
     grid-area: s;
 }
 
-.slideshow {grid-area: ss;
+.slideshow {
+    grid-area: ss;
     background-color: aliceblue;
     text-align: center;
     padding: 20px;
+    color: black;
 }
 
-.space3{
-    grid-area: s3;
-    
+.myslide{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
+
 
 .text{
     grid-area: tt;
@@ -78,4 +86,80 @@ nav{
     text-align: center;
     color: black;
     padding: 10px;
+}
+
+.numbertext{
+
+position: absolute;
+top: 10px;
+left: 10px;
+color: white;
+background-color: rgb(0, 0, 0, 0.5);
+padding: 5px 10px;
+border-radius: 5px;
+    
+} 
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50% );
+    padding: 10px;
+    font-size: 18px ;
+    color: wheat;
+    font-weight: bold;
+    background-color:(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.dot {
+width: 15px;
+height: 15px;   
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 50%; 
+display: inline-block;
+cursor: pointer;
+}
+
+.dot.active{
+background-color: white;
+}
+
+.space3{
+    grid-area: s3;
+    
+}
+
+.grid {
+    grid-area: ss;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.box{
+background-color: #2c3e50;
+border-radius: 8px;
+padding: 20px;
+text-align: center;
+font-size: 19px;
+flex: 1 1 calc(30% - 20px);
+max-width: calc(30% - 20px);
+
+.box:hover {
+    background-color: ;
+}
+
+
 }
