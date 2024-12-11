@@ -158,7 +158,7 @@ flex: 1 1 calc(30% - 20px);
 max-width: calc(30% - 20px);
 
 .box:hover {
-    background-color: ;
+    background-color: white
 }
 
 
